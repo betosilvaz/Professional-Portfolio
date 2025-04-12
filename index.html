@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
@@ -22,21 +24,21 @@
         </nav>
     </header>
     <main>
-        <section id="hero">
+        <section id="hero" data-section="1">
             <div class="hero-text">
                 <h1>I'm Gilberto Silva</h1>
                 <p>A developer focused mainly on  web development <span>from Brazil</span></p>
             </div>
         </section>
-        <section id="about">
+        <section id="about" data-section="2">
             <div class="container">
-                <h2>About Me</h2>
+                <h2 class="section-title">About Me</h2>
                 <div class="introduction">
                     <p>I’m a web developer focused on responsive design, using HTML, CSS, JavaScript, and Bootstrap. I'm curious, dedicated, and passionate about building functional and well-structured web solutions.</p>
                 </div>
                 <div class="information-about-me">
+                    <h3>Technologies</h3>
                     <div class="technologies">
-                        <h3>Technologies</h3>
                         <div class="info-item">
                             <i class="fa-brands fa-html5" style="color: #e66100;"></i>
                             <p>Deliverying clean, well organized and semantic markup</p>
@@ -54,35 +56,78 @@
                             <p>Fast and padronized styling with Bootstrap</p>
                         </div>
                     </div>
-                    <div class="personal-skills">
-                        <h3>Personal Skills</h3>
-                        <div class="info-item">
-                            <i class="fa-brands fa-html5" style="color: #e66100;"></i>
-                            <p>Deliverying clean, well organized and semantic markup</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fa-brands fa-css" style="color: #74C0FC;"></i>
-                            <p>An excellent knowledge of responsive design with CSS</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
-                        </div>
-                        <div class="info-item">
-                            <i class="fa-brands fa-bootstrap" style="color: #B197FC;"></i>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <section id="projects">
-
+        <section id="projects" data-section="3">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="menu">
+                    <div class="menu--wrapper">
+                      <div class="menu--item">
+                        <figure><img src="https://images.unsplash.com/photo-1595265677860-9a3168007dc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                      </div>
+                  
+                      <div class="menu--item">
+                        <figure><img src="https://images.unsplash.com/photo-1594786118579-95ba90c801ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                      </div>
+                  
+                      <div class="menu--item">
+                        <figure><img src="https://images.unsplash.com/photo-1509339022327-1e1e25360a41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                      </div>
+                  
+                      <div class="menu--item">
+                        <figure><img src="https://images.unsplash.com/photo-1525417071002-5ee4e6bb44f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                      </div>
+                  
+                      <div class="menu--item">
+                        <figure><img src="https://images.unsplash.com/photo-1594072702031-f0e2a602dd2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                      </div>
+                  
+                      <div class="menu--item">
+                        <figure><img src="https://images.unsplash.com/photo-1592989819277-a3aafa40c66a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </section>
-        <section id="contact">
-
+        <section id="contact" data-section="4">
+            <div class="container">
+                <h2 class="section-title">Get in touch</h2>
+                <form action="" class="contact-form">
+                    <div class="input-field">
+                        <label for="name">Who are you?</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="message">Write your message</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <ul class="socials">
+                    <li>
+                        <a href=""><i class="fa-brands fa-linkedin social-icons" style="color: #1a5fb4;"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-github social-icons" style="color: #241f31;"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-instagram social-icons" style="color: #f66151;"></i></a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
+    <script src="js/scroll_movement.js"></script>
+    <script src="js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 </html>

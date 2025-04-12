@@ -31,7 +31,21 @@ body {
     background-color: var(--primary);
 }
 
+/* ========= hiding scroll bar =========*/
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE e Edge */
+  }
+  
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+}
+
 /* ============== default beahviours ============ */
+
+section {
+    padding-bottom: 3rem;
+}
 
 a { text-decoration: none; display: inline-block; }
 
@@ -40,3 +54,6 @@ ul { list-style-type: none; }
 /* ============= utility classes ============= */
 
 .container { width: 100%; max-width: 1200px; margin: 0 auto;}
+
+.section-title { font-size: var(--subtitle-size); text-align: center; }
+
