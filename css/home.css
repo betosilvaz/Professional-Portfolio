@@ -1,0 +1,96 @@
+/* ============== HERO ================ */
+
+#hero {
+    font-family: "Rubik", sans-serif !important;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text > h1 {
+    font-size: var(--title-size);
+    user-select: none;
+}
+
+.hero-text > p, .hero-text > p > span {
+    font-size: var(--subtitle-size);
+    user-select: none;
+}
+
+.hero-text > p > span {
+    background: linear-gradient(to right, yellow, green);
+    background-clip: text;
+    color: transparent;
+}
+
+/* ============== ABOUT ================ */
+
+#about {
+    background-color: var(--secondary);
+    min-height: 100vh;
+}
+
+#about > .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    gap: 3rem;
+}
+
+#about h2 {
+    margin-top: 6rem;
+    font-size: var(--subtitle-size);
+}
+
+#about h2, #about .introduction {
+    text-align: center;
+}
+
+
+.information-about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    flex-grow: 1;
+}
+
+.technologies, .personal-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.technologies h3, .personal-skills h3 {
+    text-align: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.info-item i {
+    font-size: 5rem;
+}
+
+/* ============ PROJECTS ============== */
+
+#projects {
+    min-height: 100vh;
+}
+
+
+/* ================= CONTACT ================== */
+
+#contact {
+    min-height: 100vh;
+    background-color: var(--secondary);
+}

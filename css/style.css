@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* ========== reset ============ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: "Nunito Sans";
+    color: var(--text-primary);
+}
+
+:root {
+    font-size: 16px;
+    --primary: #F8FAFC;
+    --secondary: #eff3f8;
+    --text-primary: #001219;
+    --text-secondary: #ac2525;;
+    --title-size: 4rem;
+    --subtitle-size: 2.5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--primary);
+}
+
+/* ============== default beahviours ============ */
+
+a { text-decoration: none; display: inline-block; }
+
+ul { list-style-type: none; }
+
+/* ============= utility classes ============= */
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto;}

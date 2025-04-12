@@ -1,0 +1,26 @@
+.page-header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.navbar {
+    padding: 2rem 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-items a {
+    transition: 1s;
+}
+
+.navbar-items a:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
