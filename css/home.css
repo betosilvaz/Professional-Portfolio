@@ -30,7 +30,7 @@
 #about {
     background-color: var(--secondary);
     min-height: 100vh;
-    padding-top: 6rem;
+    padding-top: 7rem;
 }
 #about > .container {
     height: 100%;
@@ -55,7 +55,7 @@
 }
 
 .technologies {
-    --number-items: 6;
+    --number-items: 7;
 }
 
 .info-item {
@@ -73,6 +73,9 @@
 }
 .info-item i {
     font-size: 7rem;
+}
+.info-item img {
+    width: 6rem;
 }
 .info-item p {
     text-align: center;
@@ -126,6 +129,9 @@
   animation-delay: calc(30s / var(--number-items) * (var(--number-items) - 6) * -1);
 }
 
+.item7 {
+  animation-delay: calc(30s / var(--number-items) * (var(--number-items) - 7) * -1);
+}
 
 /* ============ PROJECTS ============== */
 #projects {
@@ -150,9 +156,29 @@
 }
 .project {
     flex-grow: 1;
+    min-height: 400px;
     min-width: 300px;
-    border: 1px solid black;
+    border: 2px solid white;
+    outline: 2px solid black;
+    position: relative;
+    overflow: hidden;
 }
+.project:nth-child(1) {
+    background-image: url("./../images/ascii.png");
+    background-size: cover;
+    background-position: center;
+}
+.project:nth-child(2) {
+    background-image: url("./../images/ipmonitor.png");
+    background-size: cover;
+    background-position: center;
+}
+.project:nth-child(3) {
+    background-image: url("./../images/website.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .over {
     height: 100%;
     width: 100%;
@@ -190,8 +216,8 @@
 
 /* ================= CONTACT ================== */
 #contact {
-    height: 100vh;
-    padding-top: 6rem;
+    min-height: fit-content;
+    padding-top: 7rem;
     background-color: var(--secondary);
     position: relative;
 }
@@ -218,7 +244,12 @@
 
 /* ============================== RESPONSIVITY ============================== */
 @media (max-width: 756px) {
-
+    .hero-text > h1 {
+        font-size: 10vw;
+    }
+    .hero-text > p , .hero-text > p > span {
+        font-size: 6vw;
+    }
     .information-about-me {
         gap: 3rem;
     }

@@ -26,3 +26,12 @@
     transform: scale(1.2);
     transform-origin: center;
 }
+
+@media (max-width: 400px) {
+    .page-header {
+        padding-inline: 2rem;
+    }
+    .navbar > ul {
+        justify-content: space-between;
+    }
+}
