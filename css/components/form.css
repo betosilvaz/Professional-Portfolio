@@ -25,6 +25,7 @@
 
 input[type="submit"] {
     cursor: pointer;
+    transition: 1s;
 }
 
 input, textarea {
@@ -38,4 +39,16 @@ input, textarea {
 textarea {
     height: 100%;
     resize: none;
+}
+
+/* =========== RESPONSIVITY ============== */
+
+@media (max-width: 756px) {
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+    textarea {
+        height: 200px;
+    }
 }
